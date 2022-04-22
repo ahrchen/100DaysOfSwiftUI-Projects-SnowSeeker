@@ -14,6 +14,7 @@
 		EE2C949628132E9000A591C5 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = EE2C949528132E9000A591C5 /* resorts.json */; };
 		EE2C949828132EB600A591C5 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C949728132EB600A591C5 /* Resort.swift */; };
 		EE2C949A28132F3B00A591C5 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C949928132F3B00A591C5 /* Bundle-Decodable.swift */; };
+		EE2C949C2813372700A591C5 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C949B2813372700A591C5 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		EE2C949528132E9000A591C5 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
 		EE2C949728132EB600A591C5 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		EE2C949928132F3B00A591C5 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		EE2C949B2813372700A591C5 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				EE15ED9E2811DE1500225C0F /* SnowSeekerApp.swift */,
 				EE15EDA02811DE1500225C0F /* ContentView.swift */,
+				EE2C949B2813372700A591C5 /* WelcomeView.swift */,
 				EE2C949928132F3B00A591C5 /* Bundle-Decodable.swift */,
 				EE15EDA22811DE1600225C0F /* Assets.xcassets */,
 				EE2C949528132E9000A591C5 /* resorts.json */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2C949C2813372700A591C5 /* WelcomeView.swift in Sources */,
 				EE15EDA12811DE1500225C0F /* ContentView.swift in Sources */,
 				EE2C949828132EB600A591C5 /* Resort.swift in Sources */,
 				EE15ED9F2811DE1500225C0F /* SnowSeekerApp.swift in Sources */,
