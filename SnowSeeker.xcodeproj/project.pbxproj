@@ -18,6 +18,7 @@
 		EE2C949E28133A9900A591C5 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C949D28133A9900A591C5 /* ResortView.swift */; };
 		EE2C94A028133C1900A591C5 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C949F28133C1900A591C5 /* SkiDetailsView.swift */; };
 		EE2C94A228133D4D00A591C5 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C94A128133D4D00A591C5 /* ResortDetailsView.swift */; };
+		EE8D512628165B8B004688DC /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8D512528165B8B004688DC /* Facility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		EE2C949D28133A9900A591C5 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
 		EE2C949F28133C1900A591C5 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
 		EE2C94A128133D4D00A591C5 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		EE8D512528165B8B004688DC /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				EE2C949928132F3B00A591C5 /* Bundle-Decodable.swift */,
 				EE15EDA22811DE1600225C0F /* Assets.xcassets */,
 				EE2C949528132E9000A591C5 /* resorts.json */,
+				EE8D512528165B8B004688DC /* Facility.swift */,
 				EE2C949728132EB600A591C5 /* Resort.swift */,
 				EE15EDA42811DE1600225C0F /* Preview Content */,
 			);
@@ -162,6 +165,7 @@
 				EE2C949C2813372700A591C5 /* WelcomeView.swift in Sources */,
 				EE2C94A028133C1900A591C5 /* SkiDetailsView.swift in Sources */,
 				EE2C94A228133D4D00A591C5 /* ResortDetailsView.swift in Sources */,
+				EE8D512628165B8B004688DC /* Facility.swift in Sources */,
 				EE15EDA12811DE1500225C0F /* ContentView.swift in Sources */,
 				EE2C949828132EB600A591C5 /* Resort.swift in Sources */,
 				EE2C949E28133A9900A591C5 /* ResortView.swift in Sources */,
