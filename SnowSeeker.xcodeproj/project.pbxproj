@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE10D0D32817456E007138F0 /* FileManager-DocumentDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE10D0D22817456E007138F0 /* FileManager-DocumentDirectory.swift */; };
 		EE15ED9F2811DE1500225C0F /* SnowSeekerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15ED9E2811DE1500225C0F /* SnowSeekerApp.swift */; };
 		EE15EDA12811DE1500225C0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE15EDA02811DE1500225C0F /* ContentView.swift */; };
 		EE15EDA32811DE1600225C0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE15EDA22811DE1600225C0F /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE10D0D22817456E007138F0 /* FileManager-DocumentDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentDirectory.swift"; sourceTree = "<group>"; };
 		EE15ED9B2811DE1500225C0F /* SnowSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnowSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE15ED9E2811DE1500225C0F /* SnowSeekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowSeekerApp.swift; sourceTree = "<group>"; };
 		EE15EDA02811DE1500225C0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				EE8D512528165B8B004688DC /* Facility.swift */,
 				EE2C949728132EB600A591C5 /* Resort.swift */,
 				EE8D512728165EE6004688DC /* Favorites.swift */,
+				EE10D0D22817456E007138F0 /* FileManager-DocumentDirectory.swift */,
 				EE15EDA42811DE1600225C0F /* Preview Content */,
 			);
 			path = SnowSeeker;
@@ -170,6 +173,7 @@
 				EE2C94A228133D4D00A591C5 /* ResortDetailsView.swift in Sources */,
 				EE8D512828165EE6004688DC /* Favorites.swift in Sources */,
 				EE8D512628165B8B004688DC /* Facility.swift in Sources */,
+				EE10D0D32817456E007138F0 /* FileManager-DocumentDirectory.swift in Sources */,
 				EE15EDA12811DE1500225C0F /* ContentView.swift in Sources */,
 				EE2C949828132EB600A591C5 /* Resort.swift in Sources */,
 				EE2C949E28133A9900A591C5 /* ResortView.swift in Sources */,

@@ -10,10 +10,16 @@ import SwiftUI
 class Favorites: ObservableObject {
     private var resorts: Set<String>
     
-    private let saveKey = "Favorites"
+    static fileprivate let savePath = FileManager.documentDirectory.appendingPathComponent("Favorites")
     
     init() {
-        resorts = []
+        do {
+            let data = try Data(contentsOf: Favorites.savePath)
+            let resorts = try JSONDecoder().decode(Set<String>.self, from: data)
+            self.resorts = resorts
+        } catch {
+            resorts = []
+        }
     }
     
     func contains(_ resort: Resort) -> Bool {
@@ -33,6 +39,11 @@ class Favorites: ObservableObject {
     }
     
     func save() {
-        
+        do {
+            let data = try JSONEncoder().encode(resorts)
+            try data.write(to: Favorites.savePath, options:[.atomic, .completeFileProtection])
+        } catch {
+            print("Unable to save favorites data")
+        }
     }
 }
