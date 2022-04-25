@@ -18,12 +18,19 @@ extension View {
 }
 struct ContentView: View {
     @State private var searchText = ""
+    @State private var isShowingSort = false
+    @State private var sortSelection: SortType = .none
+    
     @StateObject var favorites = Favorites()
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     
+    enum SortType {
+        case none, alphabetical,country
+    }
+    
     var body: some View {
         NavigationView {
-            List(filteredResorts) { resort in
+            List(sortedResorts) { resort in
                 NavigationLink {
                     ResortView(resort: resort)
                 } label: {
@@ -58,6 +65,29 @@ struct ContentView: View {
             }
             .navigationTitle("Resorts")
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isShowingSort = true
+                    } label : {
+                        Label("Sort", systemImage: "line.3.horizontal.decrease.circle")
+                    }
+                }
+            }
+            .confirmationDialog("Sort Resorts", isPresented: $isShowingSort) {
+                Button("Default") {
+                    sortSelection = .none
+                }
+                Button("Alphabetical") {
+                    sortSelection = .alphabetical
+                }
+                Button("Country") {
+                    sortSelection  = .country
+                }
+                Button("Cancel", role:.cancel) {}
+            } message: {
+                Text("Sort")
+            }
             WelcomeView()
         }
         .phoneOnlyNavigationView()
@@ -70,6 +100,22 @@ struct ContentView: View {
             return resorts
         } else {
             return resorts.filter { $0.name.localizedCaseInsensitiveContains(searchText)}
+        }
+    }
+    
+    var sortedResorts: [Resort] {
+        switch sortSelection {
+        case .none:
+            return filteredResorts
+        case .alphabetical:
+            return filteredResorts.sorted {
+                $0.name < $1.name
+            }
+        case .country:
+            return filteredResorts.sorted {
+                $0.country < $1.country
+            }
+
         }
     }
 }
